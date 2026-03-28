@@ -8,6 +8,10 @@ const taskSchema = new mongoose.Schema({
   date:{
     type:Date,
     required : false
+  },
+  timestamp:{
+    type:Date,
+    default:Date.now
   }
 }
 );
